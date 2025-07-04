@@ -3,18 +3,12 @@ name: "Terraform-github-repositories"
 on:
   push:
     paths:
-     - 'infrateam-terraform-modules/examples/github-repositories/*'
-     - '.github/workflows/terraform-github-repositories.yaml'
-     - 'infrateam-terraform-modules/github-repositories-module/*'
-     - 'infrateam-terraform-modules/values/github-repos/*'
+     - 'terraform/*'
     branches:
       - main
   pull_request:
     paths:
-     - 'infrateam-terraform-modules/examples/github-repositories/*'
-     - '.github/workflows/terraform-github-repositories.yaml'
-     - 'infrateam-terraform-modules/github-repositories-module/*'
-     - 'infrateam-terraform-modules/values/github-repos/*'
+     - 'terraform/*'
 jobs:
   terraform:
     name: "Terraform"
