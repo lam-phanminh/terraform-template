@@ -16,9 +16,9 @@ jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest    
-    # outputs:
-      # apply_status: ${{ steps.apply.outcome }}
-      # plan_status: ${{ steps.plan.outcome }}
+    outputs:
+      apply_status: ${{ steps.apply.outcome }}
+      plan_status: ${{ steps.plan.outcome }}
     defaults:
       run:
         working-directory: terraform
